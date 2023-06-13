@@ -151,7 +151,7 @@ func TestClient_Token(t *testing.T) {
 			t.Errorf("Should throw error: %s", "spotify: client not backed by oauth2 transport")
 		}
 	})
-	
+
 	t.Run("invalid token", func(t *testing.T) {
 		httpClient := config.Client(context.Background(), nil)
 		client := New(httpClient)

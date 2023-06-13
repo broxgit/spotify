@@ -51,6 +51,14 @@ type SimpleAlbum struct {
 	ReleaseDatePrecision string `json:"release_date_precision"`
 }
 
+func (s *SimpleAlbum) GetName() string {
+	return s.Name
+}
+
+func (s *SimpleAlbum) GetCountryCode() string {
+	return "US"
+}
+
 // ReleaseDateTime converts the album's ReleaseDate to a time.TimeValue.
 // All of the fields in the result may not be valid.  For example, if
 // ReleaseDatePrecision is "month", then only the month and year

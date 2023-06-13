@@ -21,7 +21,7 @@ To install the library, simply
 
 ## Authentication
 
-Spotify uses OAuth2 for authentication and authorization.  
+Spotify uses OAuth2 for authentication and authorization.
 As of May 29, 2017 _all_ Web API endpoints require an access token.
 
 You can authenticate using a client credentials flow, but this does not provide

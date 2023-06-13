@@ -5,13 +5,12 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	spotifyauth "github.com/zmb3/spotify/v2/auth"
+	"github.com/broxhouse/spotify/v2"
+	spotifyauth "github.com/broxhouse/spotify/v2/auth"
 	"log"
 	"os"
 
 	"golang.org/x/oauth2/clientcredentials"
-
-	"github.com/zmb3/spotify/v2"
 )
 
 var userID = flag.String("user", "", "the Spotify user ID to look up")
